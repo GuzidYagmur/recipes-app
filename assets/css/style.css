@@ -10,10 +10,10 @@ body {
 }
 .container {
     height: 793px;
-    display: flex; /* Flexbox ile ortalama */
-    justify-content: center; /* Yatayda ortala */
-    align-items: center; /* Dikeyde ortala */
-    position: relative; /* İçindeki mutlak konumlandırılmış öğeler için */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
 }
 
 .entry {
@@ -45,9 +45,22 @@ body {
 .img-btn {
     z-index: 2;
     position: absolute;
-    top: 50%; /* .img-bg'nin tam ortasında olacak */
-    left: 50%; /* .img-bg'nin tam ortasında olacak */
-    transform: translate(-50%, -50%); /* Hem yatay hem dikeyde ortalamak */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1); 
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1); 
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); 
+    }
 }
 
 /* main-page */
