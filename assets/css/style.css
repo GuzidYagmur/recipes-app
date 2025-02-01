@@ -8,38 +8,46 @@ body {
     font-family: system-ui;
 
 }
-
 .container {
-    width: 425px;
     height: 793px;
-    margin: auto;
+    display: flex; /* Flexbox ile ortalama */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    position: relative; /* İçindeki mutlak konumlandırılmış öğeler için */
+}
+
+.entry {
+    min-width: 425px;
 }
 
 .container h4 {
     position: absolute;
     z-index: 2;
     color: #ffffff;
-    padding-top: 177px;
-    margin-left: 74px;
+    margin-top: -220px;
+    margin-left: 84px;
     text-align: center;
     width: 249px;
     font-size: 40px;
     font-weight: 400;
     line-height: 48.41px;
 }
-
 .img-bg {
     z-index: 1;
     position: absolute;
     border-radius: 50px;
     filter: grayscale(50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .img-btn {
-    padding-top: 287px;
-    margin-left: 96px;
     z-index: 2;
     position: absolute;
+    top: 50%; /* .img-bg'nin tam ortasında olacak */
+    left: 50%; /* .img-bg'nin tam ortasında olacak */
+    transform: translate(-50%, -50%); /* Hem yatay hem dikeyde ortalamak */
 }
 
 /* main-page */
