@@ -176,18 +176,15 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    /* Ortalamak için */
     background-color: #D9D9D9E5;
     display: flex;
     padding: 20px 40px;
     width: 100%;
     justify-content: space-between;
     border-radius: 0px 0px 50px 50px;
-    /* Üst kenarları oval yap */
     align-items: flex-end;
     max-width: 425px;
     z-index: 1000;
-    /* Üstte kalmasını sağlar */
 }
 
 
