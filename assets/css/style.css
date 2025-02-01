@@ -12,6 +12,7 @@ body {
 .container {
     width: 425px;
     height: 793px;
+    margin: auto;
 }
 
 .container h4 {
