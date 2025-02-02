@@ -3,11 +3,13 @@ let recipes = [];
 
 async function fetchRecipes() {
     try {
+        foodMenus.innerHTML = `<i id="loading" class="fa-solid fa-spinner fa-spin"></i>`;
+
         const res = await fetch("https://dummyjson.com/recipes");
         if (!res.ok) {
             throw new Error("Veri alınırken hata oluştu");
         }
-
+        foodMenus.innerHTML = "";
         const data = await res.json();
         recipes = [...data.recipes];
 

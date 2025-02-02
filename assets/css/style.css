@@ -236,7 +236,9 @@ body {
     height: 30px;
     border-radius: 50%;
 }
-
+#loading{
+    margin-top: 100px;
+}
 
 .navbar i {
     border-radius: 50px;
