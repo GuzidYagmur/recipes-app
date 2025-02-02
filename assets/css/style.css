@@ -114,6 +114,10 @@ body {
     margin-bottom: 11px;
 }
 
+.foodMenu{
+    margin-bottom: 80px;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -135,6 +139,13 @@ body {
 
 .img-head {
     display: flex;
+    cursor: pointer;
+
+}
+
+
+.img-head img{
+    width: 100px;
 }
 
 .kcal-min {
@@ -160,6 +171,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 16.94px;
+    cursor: pointer;
 
 }
 
@@ -198,7 +210,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #D9D9D9E5;
+    background-color: #a0a0a0;
     display: flex;
     padding: 20px 40px;
     width: 100%;
@@ -276,6 +288,7 @@ body {
     align-items: center;
     padding: 8px;
     height: 55px;
+    cursor: pointer;
 }
 
 .categori-container {
@@ -332,6 +345,7 @@ body {
     margin-bottom: 44px;
     height: 50px;
     border: 1px solid #aeaeae;
+    padding-left: 10px;
 }
 
 .recipe-container h5 {
