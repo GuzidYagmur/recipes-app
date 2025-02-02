@@ -146,6 +146,7 @@ body {
 
 .img-head img{
     width: 100px;
+    border-radius: 25px;
 }
 
 .kcal-min {
